@@ -4,8 +4,6 @@ spack:
       compiler:
       - gcc@10.0:10
   specs:
-  - readline
-  - python@3.12
   - metis@5.1.0~shared
   - parmetis@4.0.3~shared
   - scotch@7.0.1+mpi+metis~shared
