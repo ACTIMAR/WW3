@@ -8,9 +8,9 @@ concurrency:
 
 env:
   cache_key: gnu11-1
-  CC: gcc-10
-  FC: gfortran-10
-  CXX: g++-10
+  CC: gcc-14
+  FC: gfortran-14
+  CXX: g++-14
 
 
 # Split into a steup step, and a WW3 build step which
