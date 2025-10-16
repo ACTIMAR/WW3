@@ -45,7 +45,7 @@ jobs:
         run: |
           # Install NetCDF, ESMF, g2, etc using Spack
           sudo apt install cmake
-          git clone -c feature.manyFiles=true https://github.com/JCSDA/spack.git
+          git clone -c feature.manyFiles=true --depth=2 --branch=spack-stack-1.9.3 https://github.com/JCSDA/spack.git
           source spack/share/spack/setup-env.sh
           spack env create ww3-gnu ww3/model/ci/spack_gnu.yaml
           spack env activate ww3-gnu
