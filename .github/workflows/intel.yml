@@ -65,8 +65,8 @@ jobs:
           sudo mv /usr/local /usr/local_mv
           # Install NetCDF, ESMF, g2, etc using Spack
           . /opt/intel/oneapi/setvars.sh
-          export CFLAGS="$CFLAGS -D__NO_FLOAT128"
-          export CXXFLAGS="$CXXFLAGS -D__NO_FLOAT128"
+          export CFLAGS="$CFLAGS -D__NO_FLOAT128 -D__STDC_WANT_IEC_60559_TYPES_EXT__=1"
+          export CXXFLAGS="$CXXFLAGS -D__NO_FLOAT128 -D__STDC_WANT_IEC_60559_TYPES_EXT__=1"
           #git clone -c feature.manyFiles=true https://github.com/JCSDA/spack.git
           git clone -c feature.manyFiles=true --depth=2 --branch=spack-stack-1.9.3 https://github.com/JCSDA/spack.git
           source spack/share/spack/setup-env.sh
