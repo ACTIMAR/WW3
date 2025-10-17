@@ -15,10 +15,10 @@ concurrency:
 env:
   cache_key: intel10-3
   CC: icc
-  FC: ifort
+  FC: ifx
   CXX: icpc
   I_MPI_CC: icc
-  I_MPI_F90: ifort
+  I_MPI_F90: ifx
 
 # Split into a dependency build step, and a WW3 build step which
 # builds multiple switches in a matrix. The setup is run once and
